@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTRO BOT — Официальный сайт</title>
+  <meta name="description" content="Astro Bot — лучшая платформенная игра 2024 года. Эксклюзивно для PlayStation 5.">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- STARS BACKGROUND -->
+<canvas id="stars-canvas"></canvas>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+  <a href="#home" class="nav-logo">
+    <div class="bot-icon">🤖</div>
+    ASTRO <span>BOT</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">Об игре</a></li>
+    <li><a href="#gameplay">Геймплей</a></li>
+    <li><a href="#awards">Награды</a></li>
+    <li><a href="#reviews">Отзывы</a></li>
+    <li><a href="#shop" class="nav-cta">Купить →</a></li>
+  </ul>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-badge">
+    <span class="dot"></span>
+    Игра года 2024 — The Game Awards
+  </div>
+
+  <h1>
+    <span class="line1">ASTRO</span>
+    <span class="line2 glitch" data-text="BOT">BOT</span>
+  </h1>
+
+  <p class="hero-subtitle">
+    Захватывающее космическое приключение исключительно для PlayStation 5.
+    Более 300 уровней, легендарные герои Sony и магия DualSense.
+  </p>
+
+  <div class="hero-buttons">
+    <a href="#shop" class="btn-primary">🎮 Купить сейчас</a>
+    <a href="#gameplay" class="btn-secondary">▶ Смотреть геймплей</a>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-num" data-count="96" data-suffix="">96</span>
+      <span class="stat-label">Metacritic</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-count="300" data-suffix="+">300+</span>
+      <span class="stat-label">Уровней</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-count="150" data-suffix="+">150+</span>
+      <span class="stat-label">Героев Sony</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-count="6" data-suffix="">6</span>
+      <span class="stat-label">Наград TGA</span>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+    <span class="scroll-text">Прокрутите вниз</span>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section class="about" id="about">
+  <div class="about-grid">
+
+    <!-- Visual side -->
+    <div class="about-visual reveal">
+      <div class="about-card">
+        <span class="about-robot-emoji">🤖</span>
+        <div style="text-align:center;">
+          <span class="section-eyebrow">PlayStation 5 Exclusive</span>
+          <p style="color:var(--white-dim); font-size:0.85rem; margin-top:8px;">Только на PS5. Только Astro Bot.</p>
+        </div>
+        <div class="about-card-stats">
+          <div class="mini-stat">
+            <span class="mini-stat-val" data-count="96" data-suffix="">96</span>
+            <span class="mini-stat-label">Metacritic</span>
+          </div>
+          <div class="mini-stat">
+            <span class="mini-stat-val" data-count="9.3" data-suffix="">9.3</span>
+            <span class="mini-stat-label">OpenCritic</span>
+          </div>
+          <div class="mini-stat">
+            <span class="mini-stat-val" data-count="6" data-suffix="">6</span>
+            <span class="mini-stat-label">TGA Awards</span>
+          </div>
+          <div class="mini-stat">
+            <span class="mini-stat-val">PS5</span>
+            <span class="mini-stat-label">Exclusive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content side -->
+    <div class="about-content reveal reveal-delay-2">
+      <span class="section-eyebrow">Об игре</span>
+      <h2 class="section-title">Маленький робот.<br>Огромное <span class="accent">приключение</span>.</h2>
+      <p class="section-desc">
+        Astro Bot — это шедевральный платформер от Team Asobi, созданный специально для PlayStation 5.
+        Спасите сотни потерявшихся ботов и соберите заново разбитый PlayStation 5 после атаки злодея,
+        путешествуя по пяти галактикам.
+      </p>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <div class="feature-icon">🎮</div>
+          <div class="feature-text">
+            <h4>DualSense нового уровня</h4>
+            <p>Адаптивные триггеры и тактильная обратная связь делают каждое движение ощутимым — вы буквально чувствуете игровой мир.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🌌</div>
+          <div class="feature-text">
+            <h4>5 уникальных галактик</h4>
+            <p>Джунгли, кибер-пространство, ледяные миры, пустыни и космические станции — каждая галактика со своей механикой.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">⭐</div>
+          <div class="feature-text">
+            <h4>150+ легендарных персонажей</h4>
+            <p>Кратос, Элли, Алой, Спайро и сотни других любимых героев PlayStation спрятаны по всему миру.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🏆</div>
+          <div class="feature-text">
+            <h4>Игра года 2024</h4>
+            <p>Astro Bot победила в 6 номинациях The Game Awards 2024, включая главный приз «Игра года».</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== GAMEPLAY SECTION ===== -->
+<section class="gameplay" id="gameplay">
+
+  <div class="gameplay-header reveal">
+    <span class="section-eyebrow">Геймплей</span>
+    <h2 class="section-title">Всё, что делает<br>игру <span class="accent">великой</span></h2>
+    <p class="section-desc" style="margin:0 auto;">
+      Team Asobi превратила консоль PS5 в игровой опыт. Каждая механика DualSense нашла своё воплощение в мире Astro Bot.
+    </p>
+  </div>
+
+  <div class="mechanics-grid">
+    <div class="mechanic-card reveal reveal-delay-1">
+      <span class="mechanic-emoji">🪃</span>
+      <h3>Пружинные перчатки</h3>
+      <p>Тяните предметы и врагов, раскачивайтесь на лианах, открывайте секреты — всё через адаптивные триггеры.</p>
+      <span class="mechanic-tag">DualSense</span>
+    </div>
+    <div class="mechanic-card reveal reveal-delay-2">
+      <span class="mechanic-emoji">🦈</span>
+      <h3>Акула-ракета</h3>
+      <p>Неситесь вперёд сквозь волны, врагов и препятствия в невероятных трёхмерных уровнях-трубах.</p>
+      <span class="mechanic-tag">Трансформации</span>
+    </div>
+    <div class="mechanic-card reveal reveal-delay-3">
+      <span class="mechanic-emoji">🐘</span>
+      <h3>Слон с хоботом</h3>
+      <p>Всасывайте предметы, стреляйте водой и решайте физические головоломки через тактильную обратную связь.</p>
+      <span class="mechanic-tag">Haptic Feedback</span>
+    </div>
+    <div class="mechanic-card reveal reveal-delay-4">
+      <span class="mechanic-emoji">⚡</span>
+      <h3>Электро-заряд</h3>
+      <p>Заряжайте платформы и механизмы, разгадывая хитроумные головоломки с электричеством.</p>
+      <span class="mechanic-tag">Головоломки</span>
+    </div>
+    <div class="mechanic-card reveal reveal-delay-5">
+      <span class="mechanic-emoji">🦋</span>
+      <h3>Мотыльковые крылья</h3>
+      <p>Порхайте в невесомости, парите в восходящих потоках, открывайте секретные пути высоко в небесах.</p>
+      <span class="mechanic-tag">Полёт</span>
+    </div>
+    <div class="mechanic-card reveal reveal-delay-1">
+      <span class="mechanic-emoji">🦊</span>
+      <h3>Монета Раккун</h3>
+      <p>Спрятанные монеты открывают гигантский игровой автомат Gashapon — коллекционируйте всех ботов!</p>
+      <span class="mechanic-tag">Коллекция</span>
+    </div>
+  </div>
+
+  <!-- World Tabs -->
+  <div class="worlds-section reveal">
+    <p class="worlds-title">🌍 Исследуйте галактики</p>
+    <div class="worlds-tabs">
+      <button class="world-tab active" data-world="jungle">🌿 Джунгли</button>
+      <button class="world-tab" data-world="space">🚀 Космос</button>
+      <button class="world-tab" data-world="cyber">💻 Кибер</button>
+      <button class="world-tab" data-world="ice">❄️ Ледяной мир</button>
+      <button class="world-tab" data-world="desert">🏜️ Пустыня</button>
+    </div>
+
+    <div class="world-panel active" id="world-jungle">
+      <div class="world-panel-info">
+        <h3>🌿 Джунгли Атоу</h3>
+        <p>Первая галактика встречает вас буйными тропическими джунглями. Здесь Astro получает свои первые способности и сталкивается с растительными монстрами.</p>
+        <ul class="world-challenges">
+          <li>Шипастые враги-цветки</li>
+          <li>Лианы и пружинные прыжки</li>
+          <li>Секретные пещеры с ботами</li>
+          <li>Босс — Гигантская обезьяна</li>
+        </ul>
+      </div>
+      <div class="world-visual-box" style="padding:0; overflow:hidden; border-radius:16px;">
+        <img src="https://youre.outof.games/media/uploads/fa/90/fa90499d-4734-4c11-8092-06ec89cd3cd5/astro04jpg.jpg" alt="Джунгли Атоу — Astro Bot" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+    </div>
+
+    <div class="world-panel" id="world-space">
+      <div class="world-panel-info">
+        <h3>🚀 Звёздная галактика</h3>
+        <p>Открытый космос, астероиды и заброшенные космические станции. Здесь нет гравитации, и Astro должен освоить полёт на реактивном ранце.</p>
+        <ul class="world-challenges">
+          <li>Зоны нулевой гравитации</li>
+          <li>Роботы-охотники</li>
+          <li>Метеоритные дожди</li>
+          <li>Босс — Космический осьминог</li>
+        </ul>
+      </div>
+      <div class="world-visual-box" style="padding:0; overflow:hidden; border-radius:16px;">
+        <img src="https://static0.pocketlintimages.com/wordpress/wp-content/uploads/2024/09/untitled-design-33.jpg?w=1600&h=900&fit=crop" alt="Космос — Astro Bot" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+    </div>
+
+    <div class="world-panel" id="world-cyber">
+      <div class="world-panel-info">
+        <h3>💻 Цифровой мир</h3>
+        <p>Внутри цифрового пространства PlayStation всё подчиняется логике кода. Пиксели, полигоны и баги стали настоящими препятствиями.</p>
+        <ul class="world-challenges">
+          <li>Электрические головоломки</li>
+          <li>Враги-вирусы</li>
+          <li>Бинарные платформы</li>
+          <li>Босс — Главный вирус</li>
+        </ul>
+      </div>
+      <div class="world-visual-box" style="padding:0; overflow:hidden; border-radius:16px;">
+        <img src="https://pliki.ppe.pl/storage/63000cd1d8ff36d861ab/63000cd1d8ff36d861ab.jpg" alt="Кибер мир — Astro Bot" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+    </div>
+
+    <div class="world-panel" id="world-ice">
+      <div class="world-panel-info">
+        <h3>❄️ Ледяная тундра</h3>
+        <p>Вечная мерзлота, скользкие платформы и снежные бури делают этот мир одним из самых коварных. Но и одним из самых красивых.</p>
+        <ul class="world-challenges">
+          <li>Скользкие ледяные поверхности</li>
+          <li>Замёрзшие боты в глыбах льда</li>
+          <li>Снежные метели</li>
+          <li>Босс — Снежный великан</li>
+        </ul>
+      </div>
+      <div class="world-visual-box" style="padding:0; overflow:hidden; border-radius:16px;">
+        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/10/astro-bot-ice-penguins-level.jpg?q=49&fit=contain&w=725&h=408&dpr=2" alt="Ледяной мир — Astro Bot" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+    </div>
+
+    <div class="world-panel" id="world-desert">
+      <div class="world-panel-info">
+        <h3>🏜️ Пески Та-ру</h3>
+        <p>Раскалённые пески, дюны и затерянные руины. Finální мир перед финальным боссом — здесь скрыты самые редкие боты.</p>
+        <ul class="world-challenges">
+          <li>Зыбучие пески и ловушки</li>
+          <li>Скарабеи-враги</li>
+          <li>Подземные туннели</li>
+          <li>Босс — Древний скорпион</li>
+        </ul>
+      </div>
+      <div class="world-visual-box" style="padding:0; overflow:hidden; border-radius:16px;">
+        <img src="https://static0.thegamerimages.com/wordpress/wp-content/uploads/2024/09/screenshot-2024-09-04-094658.png?q=70&fit=crop&w=825&dpr=1" alt="Пустыня — Astro Bot" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== AWARDS SECTION ===== -->
+<section class="awards" id="awards">
+  <div class="awards-header reveal">
+    <span class="section-eyebrow">Признание</span>
+    <h2 class="section-title">Лучшая игра <span class="accent">2024</span> года</h2>
+    <p class="section-desc" style="margin:0 auto;">
+      Astro Bot получила беспрецедентное признание критиков и игроков по всему миру.
+    </p>
+  </div>
+
+  <div class="awards-strip reveal reveal-delay-1">
+    <div class="award-card">
+      <span class="award-trophy">🏆</span>
+      <p class="award-name">Игра года</p>
+      <p class="award-show">The Game Awards 2024</p>
+    </div>
+    <div class="award-card">
+      <span class="award-trophy">🥇</span>
+      <p class="award-name">Лучший геймдизайн</p>
+      <p class="award-show">The Game Awards 2024</p>
+    </div>
+    <div class="award-card">
+      <span class="award-trophy">🎮</span>
+      <p class="award-name">Лучшая семейная игра</p>
+      <p class="award-show">The Game Awards 2024</p>
+    </div>
+    <div class="award-card">
+      <span class="award-trophy">🎯</span>
+      <p class="award-name">Лучший инди</p>
+      <p class="award-show">BAFTA 2024</p>
+    </div>
+    <div class="award-card">
+      <span class="award-trophy">⭐</span>
+      <p class="award-name">Выбор игроков</p>
+      <p class="award-show">PlayStation Awards</p>
+    </div>
+    <div class="award-card">
+      <span class="award-trophy">🎖️</span>
+      <p class="award-name">Лучший платформер</p>
+      <p class="award-show">IGN Best of 2024</p>
+    </div>
+    <div class="award-card">
+      <span class="award-trophy">💫</span>
+      <p class="award-name">Masterpiece</p>
+      <p class="award-show">Eurogamer 2024</p>
+    </div>
+    <div class="award-card">
+      <span class="award-trophy">🌟</span>
+      <p class="award-name">Metacritic 96/100</p>
+      <p class="award-show">All-Time PS5 Best</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== REVIEWS SECTION ===== -->
+<section class="reviews" id="reviews">
+
+  <div class="reviews-header reveal">
+    <span class="section-eyebrow">Критики говорят</span>
+    <h2 class="section-title">Единогласное <span class="accent">восхищение</span></h2>
+  </div>
+
+  <div class="score-showcase reveal reveal-delay-1">
+    <div class="score-block">
+      <span class="score-num" data-count="96" data-suffix="">96</span>
+      <p class="score-source">Metacritic</p>
+    </div>
+    <div class="score-block">
+      <span class="score-num" data-count="97" data-suffix="">97</span>
+      <p class="score-source">OpenCritic</p>
+    </div>
+    <div class="score-block">
+      <span class="score-num" data-count="100" data-suffix="">100</span>
+      <p class="score-source">Edge Magazine</p>
+    </div>
+    <div class="score-block">
+      <span class="score-num" data-count="10" data-suffix="/10">10/10</span>
+      <p class="score-source">Eurogamer</p>
+    </div>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card reveal reveal-delay-1">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">Абсолютный шедевр. Astro Bot — это не просто игра года, это одна из лучших игр в истории видеоигр вообще. Team Asobi создала нечто магическое.</p>
+      <span class="review-source">IGN — 10/10</span>
+    </div>
+    <div class="review-card reveal reveal-delay-2">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">Лучший платформер эпохи. Каждый уровень — сюрприз. Каждая механика — откровение. DualSense здесь работает так, как должен был всегда.</p>
+      <span class="review-source">PlayStation Universe — 10/10</span>
+    </div>
+    <div class="review-card reveal reveal-delay-3">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">Team Asobi сделала невозможное — игру, в которой буквально каждая секунда приносит радость. Это лучшее, что есть на PS5.</p>
+      <span class="review-source">GamesRadar — 5/5</span>
+    </div>
+    <div class="review-card reveal reveal-delay-4">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">Astro Bot — это любовное письмо PlayStation от самой PlayStation. Fans обнаружат сотни скрытых камео, а новички получат лучший вводный курс в платформеры.</p>
+      <span class="review-source">VGC — 5/5</span>
+    </div>
+    <div class="review-card reveal reveal-delay-5">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">Я плакал от счастья в финале. Редко игра так умело сплетает ностальгию, инновации и безупречный геймплей в один неотразимый опыт.</p>
+      <span class="review-source">Destructoid — 10/10</span>
+    </div>
+    <div class="review-card reveal reveal-delay-1">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-quote">Идеальная системная игра. Astro Bot использует каждую функцию PS5 осознанно и мастерски. Это причина купить консоль.</p>
+      <span class="review-source">Digital Foundry</span>
+    </div>
+  </div>
+
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ===== SHOP SECTION ===== -->
+<section class="shop" id="shop">
+
+  <div class="shop-header reveal">
+    <span class="section-eyebrow">Магазин</span>
+    <h2 class="section-title">Начни <span class="accent">приключение</span> сейчас</h2>
+  </div>
+  <p class="shop-subtitle reveal">
+    Кусачие цены — <span>только для настоящих игроков.</span> 🤖
+  </p>
+
+  <div class="shop-grid">
+
+    <!-- Product 1: Astro Bot game only -->
+    <div class="product-card reveal reveal-delay-1">
+      <span class="product-badge new-badge">Хит</span>
+      <div class="product-image">
+        <div style="text-align:center; position:relative; z-index:1;">
+          <div style="font-size:5rem; filter:drop-shadow(0 0 20px rgba(56,189,248,0.8));">🤖</div>
+          <div style="font-family:var(--font-display); font-size:0.6rem; letter-spacing:3px; color:var(--cyan-neon); margin-top:8px;">ASTRO BOT</div>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="product-platform">PlayStation 5 — Цифровая версия</p>
+        <h3 class="product-name">Astro Bot</h3>
+        <p class="product-desc">Полная версия легендарного платформера. Все 5 галактик, 300+ уровней и постоянные обновления.</p>
+        <div class="product-pricing">
+          <span class="price-old">4 990 ₽</span>
+          <span class="price-new">3 499 ₽</span>
+          <span class="price-discount">−30%</span>
+        </div>
+        <ul class="product-includes">
+          <li>Полная игра Astro Bot</li>
+          <li>Все 5 галактик и 300+ уровней</li>
+          <li>Бонусные костюмы роботов</li>
+          <li>Цифровой саундтрек</li>
+        </ul>
+        <button class="btn-buy">🎮 Добавить в корзину</button>
+      </div>
+    </div>
+
+    <!-- Product 2: PS5 + Astro Bot bundle -->
+    <div class="product-card reveal reveal-delay-2" style="border-color: rgba(251,191,36,0.3);">
+      <span class="product-badge" style="background: linear-gradient(135deg, var(--gold), #d97706); color: var(--space-black);">⚡ Лучший выбор</span>
+      <div class="product-image" style="background: linear-gradient(135deg, rgba(251,191,36,0.12), rgba(15,32,68,0.6));">
+        <div style="text-align:center; position:relative; z-index:1;">
+          <div style="font-size:3.5rem; filter:drop-shadow(0 0 20px rgba(251,191,36,0.6));">🎮</div>
+          <div style="font-size:1.8rem; margin-top:-8px; filter:drop-shadow(0 0 20px rgba(56,189,248,0.6));">🤖</div>
+          <div style="font-family:var(--font-display); font-size:0.55rem; letter-spacing:2px; color:var(--gold); margin-top:8px;">PS5 + ASTRO BOT</div>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="product-platform" style="color:var(--gold);">Бандл — Самая выгодная покупка</p>
+        <h3 class="product-name">PS5 + Astro Bot Bundle</h3>
+        <p class="product-desc">PlayStation 5 Slim (CFI-2000) + Astro Bot на диске. Полный комплект для нового игрока!</p>
+        <div class="product-pricing">
+          <span class="price-old">56 000 ₽</span>
+          <span class="price-new">46 990 ₽</span>
+          <span class="price-discount">−16%</span>
+        </div>
+        <ul class="product-includes">
+          <li>PlayStation 5 Slim (диск)</li>
+          <li>Геймпад DualSense белый</li>
+          <li>Astro Bot на диске</li>
+          <li>HDMI-кабель + питание</li>
+          <li>Подписка PS Plus 1 месяц</li>
+        </ul>
+        <button class="btn-buy" style="background: linear-gradient(135deg, #92400e, var(--gold)); color: var(--space-black);">🚀 Забрать бандл</button>
+      </div>
+    </div>
+
+    <!-- Product 3: PS5 only -->
+    <div class="product-card reveal reveal-delay-3">
+      <span class="product-badge">Консоль</span>
+      <div class="product-image">
+        <div style="text-align:center; position:relative; z-index:1;">
+          <div style="font-size:5rem; filter:drop-shadow(0 0 20px rgba(255,255,255,0.4));">🎮</div>
+          <div style="font-family:var(--font-display); font-size:0.6rem; letter-spacing:3px; color:var(--white-dim); margin-top:8px;">PLAYSTATION 5</div>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="product-platform">Sony — PlayStation 5 Slim</p>
+        <h3 class="product-name">PlayStation 5 Slim</h3>
+        <p class="product-desc">Компактная версия PS5 с дисководом. Мощнее. Тоньше. Тише. Именно здесь живёт Astro Bot.</p>
+        <div class="product-pricing">
+          <span class="price-old">55 000 ₽</span>
+          <span class="price-new">44 990 ₽</span>
+          <span class="price-discount">−18%</span>
+        </div>
+        <ul class="product-includes">
+          <li>PS5 Slim с дисководом</li>
+          <li>DualSense контроллер</li>
+          <li>HDMI 2.1 кабель</li>
+          <li>Блок питания</li>
+        </ul>
+        <button class="btn-buy">🎮 Добавить в корзину</button>
+      </div>
+    </div>
+
+    <!-- Product 4: Digital PS5 -->
+    <div class="product-card reveal reveal-delay-4">
+      <div class="product-image" style="background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(15,32,68,0.5));">
+        <div style="text-align:center; position:relative; z-index:1;">
+          <div style="font-size:4.5rem; filter:drop-shadow(0 0 15px rgba(99,102,241,0.6));">💿</div>
+          <div style="font-family:var(--font-display); font-size:0.55rem; letter-spacing:2px; color:#a5b4fc; margin-top:8px;">PS5 DIGITAL</div>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="product-platform" style="color:#a5b4fc;">Sony — PS5 Digital Edition</p>
+        <h3 class="product-name">PS5 Digital Edition</h3>
+        <p class="product-desc">Цифровая PS5 без дисковода — для тех, кто покупает игры в PS Store. Дешевле и компактнее.</p>
+        <div class="product-pricing">
+          <span class="price-old">43 000 ₽</span>
+          <span class="price-new">36 990 ₽</span>
+          <span class="price-discount">−14%</span>
+        </div>
+        <ul class="product-includes">
+          <li>PS5 Digital Edition</li>
+          <li>DualSense контроллер</li>
+          <li>HDMI 2.1 кабель</li>
+          <li>Доступ к PS Store</li>
+        </ul>
+        <button class="btn-buy">🎮 Добавить в корзину</button>
+      </div>
+    </div>
+
+    <!-- Product 5: DualSense controller -->
+    <div class="product-card reveal reveal-delay-5">
+      <span class="product-badge new-badge">Новинка</span>
+      <div class="product-image" style="background: linear-gradient(135deg, rgba(56,189,248,0.15), rgba(15,32,68,0.5));">
+        <div style="text-align:center; position:relative; z-index:1;">
+          <div style="font-size:5rem; filter:drop-shadow(0 0 20px rgba(56,189,248,0.7));">🕹️</div>
+          <div style="font-family:var(--font-display); font-size:0.55rem; letter-spacing:2px; color:var(--cyan-neon); margin-top:8px;">DUALSENSE</div>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="product-platform">Геймпад — Astro Bot Edition</p>
+        <h3 class="product-name">DualSense Astro Bot</h3>
+        <p class="product-desc">Лимитированный геймпад в цветах Astro Bot — белый с синими вставками и логотипом бота.</p>
+        <div class="product-pricing">
+          <span class="price-old">9 490 ₽</span>
+          <span class="price-new">7 990 ₽</span>
+          <span class="price-discount">−16%</span>
+        </div>
+        <ul class="product-includes">
+          <li>DualSense Astro Bot Edition</li>
+          <li>Адаптивные триггеры</li>
+          <li>Тактильная обратная связь</li>
+          <li>USB-C кабель в комплекте</li>
+        </ul>
+        <button class="btn-buy">🎮 Добавить в корзину</button>
+      </div>
+    </div>
+
+    <!-- Product 6: PS Plus -->
+    <div class="product-card reveal reveal-delay-2">
+      <span class="product-badge" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);">Premium</span>
+      <div class="product-image" style="background: linear-gradient(135deg, rgba(139,92,246,0.2), rgba(15,32,68,0.5));">
+        <div style="text-align:center; position:relative; z-index:1;">
+          <div style="font-size:5rem; filter:drop-shadow(0 0 20px rgba(139,92,246,0.7));">⬛</div>
+          <div style="font-family:var(--font-display); font-size:0.55rem; letter-spacing:2px; color:#c4b5fd; margin-top:8px;">PS PLUS</div>
+        </div>
+      </div>
+      <div class="product-info">
+        <p class="product-platform" style="color:#c4b5fd;">Подписка — 12 месяцев Extra</p>
+        <h3 class="product-name">PS Plus Extra</h3>
+        <p class="product-desc">800+ игр по подписке, включая новинки. Онлайн-игры, эксклюзивные скидки и облачное хранилище.</p>
+        <div class="product-pricing">
+          <span class="price-old">7 999 ₽</span>
+          <span class="price-new">5 990 ₽</span>
+          <span class="price-discount">−25%</span>
+        </div>
+        <ul class="product-includes">
+          <li>800+ игр в каталоге</li>
+          <li>Мультиплеер онлайн</li>
+          <li>Скидки до 50% в PS Store</li>
+          <li>50 GB облачного хранилища</li>
+        </ul>
+        <button class="btn-buy" style="background: linear-gradient(135deg, #6d28d9, #8b5cf6);">🎮 Оформить подписку</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="newsletter" id="newsletter">
+  <h2 class="reveal">🤖 Будь в курсе обновлений</h2>
+  <p class="reveal reveal-delay-1">Получай новости о DLC, ивентах и эксклюзивные скидки первым</p>
+  <form class="newsletter-form reveal reveal-delay-2" onsubmit="return false;">
+    <input type="email" class="newsletter-input" placeholder="твой@email.ru">
+    <button type="submit" class="btn-primary">Подписаться</button>
+  </form>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo" style="display:inline-flex; text-decoration:none; color:white; font-family:var(--font-display); font-weight:900; font-size:1.3rem; letter-spacing:2px; align-items:center; gap:10px;">
+        <div class="bot-icon" style="width:36px;height:36px;background:var(--blue-glow);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;">🤖</div>
+        ASTRO <span style="color:var(--cyan-neon);">BOT</span>
+      </div>
+      <p>Astro Bot — платформенная игра Team Asobi для PlayStation 5. Игра года 2024 по версии The Game Awards.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Игра</h4>
+      <ul>
+        <li><a href="#about">Об игре</a></li>
+        <li><a href="#gameplay">Геймплей</a></li>
+        <li><a href="#awards">Награды</a></li>
+        <li><a href="#reviews">Рецензии</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Магазин</h4>
+      <ul>
+        <li><a href="#shop">Купить игру</a></li>
+        <li><a href="#shop">PS5 Консоли</a></li>
+        <li><a href="#shop">Контроллеры</a></li>
+        <li><a href="#shop">PS Plus</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Платформа</h4>
+      <ul>
+        <li><a href="#">PlayStation.com</a></li>
+        <li><a href="#">PS Store</a></li>
+        <li><a href="#">Team Asobi</a></li>
+        <li><a href="#">PlayStation Blog</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Sony Interactive Entertainment. Все права защищены. Astro Bot™ является торговой маркой SIE.</span>
+    <span>Сделано с 💙 для фанатов PlayStation</span>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
